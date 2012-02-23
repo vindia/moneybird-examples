@@ -15,7 +15,8 @@ $contactId = '';
 if(empty($contactId)) {
     # Set details for new contact
     $newContact = new MoneyBirdContact;
-    $newContact->address        = 'Rokin 75';
+    $newContact->address1       = 'Rokin 75';
+    $newContact->zipcode        = '1234 XY';
     $newContact->city           = 'Amsterdam';
     $newContact->company_name   = 'ACME Corp.';             // not required when using first_name && last_name
     $newContact->country        = 'Netherlands';
